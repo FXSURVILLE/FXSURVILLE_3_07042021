@@ -1,0 +1,32 @@
+.fonctionnement ol {
+    padding: 10px 30px 80px 30px;
+    list-style-type: none;
+    counter-reset: compteListe;
+}
+
+.li_fonct {
+    background: $color-bg;
+    height: 30px;
+    border-radius: 20px;
+    @include box-shad;
+    margin-top: 20px;
+    padding: 20px 15px 10px 35px;
+    width: auto;  
+    list-style-type: none;
+    & .fas {
+        margin-right: 20px;
+        color: $color-inactive;
+    }
+    &::before {
+        counter-increment: compteListe;
+        content: counter(compteListe) " ";
+        @include li-number;
+    }
+    
+    &:hover {
+        background-color: $color-sec-hover;
+        & .fas {
+            color: $color-primary;
+        }
+    }
+}

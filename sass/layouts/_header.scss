@@ -1,0 +1,16 @@
+.accueil {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__logo {
+        @include center-item;
+        height: 30px;
+        margin: 20px 0px 10px 0px;
+    }
+}
+#location {
+    height: 50px;
+    width: 100%;
+    @include center-item;
+    background-color: $color-town;
+}

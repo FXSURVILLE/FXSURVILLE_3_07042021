@@ -1,0 +1,20 @@
+.intro {
+    background: $color-bg;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    &__text{
+        width: 240px;
+        margin: auto;
+    }
+    & p {
+        width: 80%;
+        margin: auto;
+    }
+    &__nav {
+        height: 100px;
+        width: 300px;
+        margin: auto;
+        margin-top: 10px;
+        @include center-item;
+    }
+}

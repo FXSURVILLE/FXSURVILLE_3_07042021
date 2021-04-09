@@ -1,0 +1,19 @@
+{
+  "name": "fxsurville_3_07042021",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FXSURVILLE/FXSURVILLE_3_07042021.git"
+  },
+  "author": "SURVILLE FX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FXSURVILLE/FXSURVILLE_3_07042021/issues"
+  },
+  "homepage": "https://github.com/FXSURVILLE/FXSURVILLE_3_07042021#readme"
+}

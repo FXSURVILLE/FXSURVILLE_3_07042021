@@ -10,6 +10,11 @@
     <title>ohmyfood</title>
 </head>
 <body>
+    <div class="opening">
+        <div class="progress">
+            <div class="progress__bar"></div>
+        </div>
+    </div>
     <header>
         <div class="accueil">
             <img class="accueil__logo" src="public/img/logo/ohmyfood.png" alt="logo_ohmyfood" title="Bienvenue sur ohmyfood">
@@ -18,22 +23,22 @@
             </a>
         </div>
     </header>
-    <div class="intro">
+    <section class="intro">
         <h2 class="intro__text">Réservez le menu qui vous convient</h2>
         <p>Découvrez les restaurants d'exception, séléctionnés par nos soins.</p>
         <div class="intro__nav">
-            <a href="#restaurants">Explorer nos restaurants</a>
+            <a class="btn" href="#restaurants">Explorer nos restaurants</a>
         </div>
-    </div>
-    <div class="fonctionnement">
+    </section>
+    <section class="fonctionnement">
         <h4>Fonctionnement</h4>
         <ol>
             <li class="li_fonct"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
             <li class="li_fonct"><i class="fas fa-list-ul"></i>Composez votre menu</li>
             <li class="li_fonct"><i class="fas fa-store"></i>Dégustez au restaurant</li>
         </ol>
-    </div>
-    <div id="restaurants">
+    </section>
+    <section id="restaurants">
         <h3>Restaurants</h3>
         <a class="rest" href="public/Pages/page_001.html">
             <img class="rest__img" src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo restaurant" title="Cliquez pour voir la page"> 
@@ -43,7 +48,8 @@
                 <p>Ménilmontant</p>
             </div>
             <div class="rest__heart">
-                <i class="far fa-heart fa-lg"></i>
+                <i class="far fa-heart fa-2x"></i>
+                <i class="fas fa-heart fa-2x"></i>
             </div>
         </a> 
         <a class="rest" href="public/Pages/page_002.html">
@@ -77,7 +83,7 @@
                 <i class="far fa-heart fa-lg"></i>
             </div>
         </a> 
-    </div>
+    </section>
     <footer>
         <h1>ohmyfood</h1>
         <div>

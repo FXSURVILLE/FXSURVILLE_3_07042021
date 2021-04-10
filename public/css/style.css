@@ -59,10 +59,15 @@ footer a .fas {
   color: #ffffff;
 }
 
-.intro__nav a {
-  background-color: #9356DC;
+.btn {
+  background: linear-gradient(0, #9356DC, #FF79DA);
+  box-shadow: 10px 5px 5px #cfcfcf;
   border-radius: 25px;
   padding: 16px;
+}
+.btn:hover {
+  background: linear-gradient(0, #9b63df, #ff83dd);
+  box-shadow: 10px 5px 5px #9c9c9c;
 }
 
 .accueil {
@@ -205,6 +210,29 @@ footer a .fas {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#restaurants .rest__heart .far {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#restaurants .rest__heart .far:hover {
+  opacity: 0;
+}
+#restaurants .rest__heart .fas {
+  opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#restaurants .rest__heart .fas:hover {
+  opacity: 1;
+  transition: opacity 500ms;
 }
 
 footer {

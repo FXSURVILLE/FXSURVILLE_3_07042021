@@ -47,7 +47,7 @@
             height: 78px;
             width: 60px;
             @include center-item;
-
+            @include heart;
         }
     }
 }

@@ -1,3 +1,73 @@
+@-webkit-keyframes loader1 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%, 95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%, 59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes loader1 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%, 95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%, 59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-bg {
+  0% {
+    background-color: orchid;
+    z-index: 5;
+  }
+  100% {
+    background-color: orchid, 0;
+    z-index: 5;
+  }
+}
 *,
 body {
   margin: 0px;
@@ -70,6 +140,28 @@ footer a .fas {
   box-shadow: 10px 5px 5px #9c9c9c;
 }
 
+.loader-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: loading-bg 2500ms cubic-bezier(0.8, 0.14, 0.8, 0.34);
+}
+.loader-box .loader {
+  color: #9356DC;
+  font-size: 100px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20%;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: loader1 1.4s 2 ease, round 1.4s 2 ease;
+  animation: loader1 1.4s 2 ease, round 1.4s 2 ease;
+}
+
 .accueil {
   display: flex;
   align-items: center;
@@ -90,6 +182,14 @@ footer a .fas {
   align-items: center;
   justify-content: center;
   background-color: #eaeaea;
+}
+
+.head_pages__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin: 20px 0px 10px 0px;
 }
 
 .intro {
@@ -218,6 +318,7 @@ footer a .fas {
   justify-content: center;
 }
 #restaurants .rest__heart .far:hover {
+  background: transparent;
   opacity: 0;
 }
 #restaurants .rest__heart .fas {
@@ -233,6 +334,38 @@ footer a .fas {
 #restaurants .rest__heart .fas:hover {
   opacity: 1;
   transition: opacity 500ms;
+}
+
+.restaurant {
+  width: auto;
+  height: 220px;
+}
+.restaurant__img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.menu {
+  background-color: pink;
+  border-radius: 50px 50px 0px 0px;
+  height: auto;
+  z-index: 2;
+  padding: 25px 0px 80px 0px;
+}
+.menu.favorite {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.menu__command {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__command .btn {
+  padding: 16px 60px 16px 60px;
 }
 
 footer {
@@ -251,6 +384,15 @@ footer a {
 
 footer .fas {
   width: 30px;
+}
+
+.accueil {
+  height: 65px;
+}
+.accueil .home {
+  position: absolute;
+  top: 22px;
+  left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

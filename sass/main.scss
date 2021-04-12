@@ -8,12 +8,14 @@
 
 @import "./components/buttons";
 
+@import "./layouts/loader";
 @import "./layouts/header";
 @import "./layouts/intro";
 @import "./layouts/fonctionnement";
 @import "./layouts/restaurants";
+@import "./layouts/body_pages";
 @import "./layouts/footer";
 
-// @import "./pages/page_001";
+@import "./pages/page_001";
 // @import "./pages/about";
 // @import "./pages/project";

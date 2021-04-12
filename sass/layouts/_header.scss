@@ -14,3 +14,14 @@
     @include center-item;
     background-color: $color-town;
 }
+// pages
+.head_pages {
+    &.home {
+
+    }
+    &__logo {
+        @include center-item;
+        height: 30px;
+        margin: 20px 0px 10px 0px;
+    }
+}

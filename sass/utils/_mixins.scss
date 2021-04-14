@@ -65,3 +65,9 @@
         }
     }
 }
+
+@mixin wrap {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}

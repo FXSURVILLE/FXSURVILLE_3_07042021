@@ -7,6 +7,7 @@
     padding: 25px 0px 80px 0px;
     & .favorite {
         @include wrap;
+        justify-content: space-between;
         margin: 0px 20px 0px 20px;
         & h1 {
             height: auto;
@@ -41,57 +42,75 @@
                 bottom: 0px;
             }
         }
-        & > div {
-            height: 70px;
+        &__box {
+            height: $check-height;
             width: auto;
             margin: 15px 15px 0px 15px;
             border-radius: 15px;
             background-color: $color-light;
+            display: flex;
+            justify-content: space-between;
             @include box-shad;
-            @include wrap;
+            // @include wrap;
+            position: relative;
+            display: flex;
+            // flex-flow: row wrap;
             overflow: hidden;
+            @include anim-box;
+            .description {
+                margin: 10px;
+                align-items: center;
+                // justify-content: flex-start;
+                width: auto;
+                @include wrap-text;
+                & h5 {
+                    @include wrap-text;
+                }
+                & p {
+                    @include wrap-text;
+                }
+            }
+            .price {
+                // margin-top: auto;
+                // margin-bottom: 10px;
+                padding-right: 22px;
+                padding-left: 10px;
+                // margin-left: 10px;
+                // position: absolute;
+                // right: 0;
+                // background-color: green;
+                display: flex;
+                // justify-content: flex-end;
+                align-items: flex-end;
+                transform: translateX(0px);
+                transition: transform 1000ms;
+            }
+            .check {
+                background-color: $color-tertiary;
+                width: $check-width;
+                position: absolute;
+                right: -$check-width;
+                height: $check-height;
+                border-radius: 0px 15px 15px 0px;
+                @include center-item;
+                transform: translateX(0px);
+                transition: transform 1000ms;
+                .fas {
+                    transform: rotate(-270deg);
+                    transition: transform 700ms 300ms;
+                }
+            }
         }
     }
 }
 
-.description {
-    margin: 10px;
-    align-items: center;
-    justify-content: flex-start;
-    width: max-content;
-}
-.price {
-    margin-top: auto;
-    margin-bottom: 10px;
-    margin-right: 22px;
-    margin-left: 10px;
-    position: absolute;
-    right: 0;
-    transform: translateX(0px);
-    transition: transform 1000ms;
-}
-.check {
-    background-color: $color-tertiary;
-    width: $check-width;
-    position: absolute;
-    right: -$check-width;
-    height: 100%;
-    border-radius: 0px 15px 15px 0px;
-    @include center-item;
-    transform: translateX(0px);
-    transition: transform 1000ms;
-    .fas {
-        transform: rotate(-270deg);
-        transition: transform 1000ms 300ms;
-    }
-}
-.description {
-    &:hover + .price {
+.choix__box {
+    &:hover .price {
         transform: translateX(-$check-width);
-        & + .check {
-            transform: translateX(-$check-width);
-        }
-        & > .fas {
+    }
+    &:hover .check {
+        transform: translateX(-$check-width);
+        & .fas {
             transform: rotate(0);
         }
     }

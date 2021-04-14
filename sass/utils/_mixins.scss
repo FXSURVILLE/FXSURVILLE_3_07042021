@@ -71,3 +71,18 @@
     display: flex;
     flex-flow: row wrap;
 }
+
+@mixin anim-box {
+    animation: pop-box $anim-dur ease-out backwards;
+    @for $i from 1 through $num-bars {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
+}
+
+@mixin wrap-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

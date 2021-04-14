@@ -14,10 +14,6 @@
         font-size: 18px;
         text-align: center;
     }
-    & a {
-        font-size: 18px;
-        color: $color-light;
-    }
 }
 
 .rest {
@@ -43,8 +39,10 @@ body {
     line-height: 1.7;
 }
 
-button {
-    font-weight: 900;
+.btn {
+    font-size: 18px;
+    color: $color-light;
+    // font-weight: 900;
     // font-style: italic;
     // font-size: 2.75rem;
 }

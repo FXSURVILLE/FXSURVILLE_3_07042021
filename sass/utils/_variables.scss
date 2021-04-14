@@ -11,6 +11,13 @@ $color-shadow: #cfcfcf;
 $color-inactive: #7e7e7e7e;
 $color-text: #000000;
 
+// box
 $check-width: 60px;
+$check-height: 70px;
 $margin-left: 5px;
 $check-marg: $check-width + $margin-left;
+
+// pop-box
+$anim-dur: 1000ms;
+$num-bars: 4;
+$anim-delay: $anim-dur / $num-bars;

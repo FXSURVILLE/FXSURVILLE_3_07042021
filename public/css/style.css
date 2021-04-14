@@ -68,6 +68,14 @@
     z-index: 5;
   }
 }
+@keyframes pop-box {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 *,
 body {
   margin: 0px;
@@ -88,10 +96,6 @@ body {
   font-size: 18px;
   text-align: center;
 }
-.intro a {
-  font-size: 18px;
-  color: #ffffff;
-}
 
 .rest__new {
   background-color: #99E2D0;
@@ -110,8 +114,9 @@ body {
   line-height: 1.7;
 }
 
-button {
-  font-weight: 900;
+.btn {
+  font-size: 18px;
+  color: #ffffff;
 }
 
 footer h1 {
@@ -364,6 +369,7 @@ footer a .fas {
   position: relative;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   margin: 0px 20px 0px 20px;
 }
 .menu .favorite h1 {
@@ -428,43 +434,64 @@ footer a .fas {
   left: 0px;
   bottom: 0px;
 }
-.menu .choix > div {
+.menu .choix__box {
   height: 70px;
   width: auto;
   margin: 15px 15px 0px 15px;
   border-radius: 15px;
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
-  flex-flow: row wrap;
   overflow: hidden;
+  animation: pop-box 1000ms ease-out backwards;
 }
-
-.description {
+.menu .choix__box--1 {
+  animation-delay: 250ms;
+}
+.menu .choix__box--2 {
+  animation-delay: 500ms;
+}
+.menu .choix__box--3 {
+  animation-delay: 750ms;
+}
+.menu .choix__box--4 {
+  animation-delay: 1000ms;
+}
+.menu .choix__box .description {
   margin: 10px;
   align-items: center;
-  justify-content: flex-start;
-  width: max-content;
+  width: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-
-.price {
-  margin-top: auto;
-  margin-bottom: 10px;
-  margin-right: 22px;
-  margin-left: 10px;
-  position: absolute;
-  right: 0;
+.menu .choix__box .description h5 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu .choix__box .description p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu .choix__box .price {
+  padding-right: 22px;
+  padding-left: 10px;
+  display: flex;
+  align-items: flex-end;
   transform: translateX(0px);
   transition: transform 1000ms;
 }
-
-.check {
+.menu .choix__box .check {
   background-color: #99E2D0;
   width: 60px;
   position: absolute;
   right: -60px;
-  height: 100%;
+  height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   align-items: center;
@@ -472,18 +499,18 @@ footer a .fas {
   transform: translateX(0px);
   transition: transform 1000ms;
 }
-.check .fas {
+.menu .choix__box .check .fas {
   transform: rotate(-270deg);
-  transition: transform 1000ms 300ms;
+  transition: transform 700ms 300ms;
 }
 
-.description:hover + .price {
+.choix__box:hover .price {
   transform: translateX(-60px);
 }
-.description:hover + .price + .check {
+.choix__box:hover .check {
   transform: translateX(-60px);
 }
-.description:hover + .price > .fas {
+.choix__box:hover .check .fas {
   transform: rotate(0);
 }
 

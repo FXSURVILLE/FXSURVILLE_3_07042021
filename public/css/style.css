@@ -164,7 +164,7 @@ footer a .fas {
 }
 
 .loader-box {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -205,6 +205,15 @@ footer a .fas {
   align-items: center;
   justify-content: center;
   background-color: #eaeaea;
+}
+
+.accueil {
+  height: 65px;
+}
+.accueil .home {
+  position: absolute;
+  top: 22px;
+  left: 20px;
 }
 
 .restaurant__img {
@@ -277,6 +286,24 @@ footer a .fas {
   color: #9356DC;
 }
 
+footer {
+  background-color: #353535;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+footer h1 {
+  margin-left: 25px;
+}
+
+footer a {
+  margin-left: 25px;
+}
+
+footer .fas {
+  width: 30px;
+}
+
 #restaurants {
   background: #f6f6f6;
   padding-bottom: 40px;
@@ -292,8 +319,9 @@ footer a .fas {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  border-radius: 0em 0em 1em 1em;
+  border-radius: 1em 1em 1em 1em;
 }
 #restaurants .rest__img {
   border-radius: 1em 1em 0em 0em;
@@ -511,33 +539,6 @@ footer a .fas {
 }
 .choix__box:hover .check .fas {
   transform: rotate(0);
-}
-
-footer {
-  background-color: #353535;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-footer h1 {
-  margin-left: 25px;
-}
-
-footer a {
-  margin-left: 25px;
-}
-
-footer .fas {
-  width: 30px;
-}
-
-.accueil {
-  height: 65px;
-}
-.accueil .home {
-  position: absolute;
-  top: 22px;
-  left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

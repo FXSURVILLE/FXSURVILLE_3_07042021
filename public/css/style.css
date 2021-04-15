@@ -338,10 +338,6 @@ footer a .fas {
   align-items: center;
   justify-content: center;
 }
-#restaurants .rest__heart .far:hover {
-  background: transparent;
-  opacity: 0;
-}
 #restaurants .rest__heart .fas {
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -355,6 +351,9 @@ footer a .fas {
 #restaurants .rest__heart .fas:hover {
   opacity: 1;
   transition: opacity 500ms;
+}
+#restaurants .rest__heart .fas:hover--hid {
+  color: transparent;
 }
 
 .menu {
@@ -392,10 +391,6 @@ footer a .fas {
   align-items: center;
   justify-content: center;
 }
-.menu .favorite__heart .far:hover {
-  background: transparent;
-  opacity: 0;
-}
 .menu .favorite__heart .fas {
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -409,6 +404,9 @@ footer a .fas {
 .menu .favorite__heart .fas:hover {
   opacity: 1;
   transition: opacity 500ms;
+}
+.menu .favorite__heart .fas:hover--hid {
+  color: transparent;
 }
 .menu__command {
   display: flex;
@@ -479,6 +477,7 @@ footer a .fas {
   overflow: hidden;
 }
 .menu .choix__box .price {
+  margin-bottom: 10px;
   padding-right: 22px;
   padding-left: 10px;
   display: flex;

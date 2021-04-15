@@ -45,10 +45,12 @@
     & .far {
         position: absolute;
         @include center-item;
-        &:hover {
-            background: transparent;
-            opacity: 0;
-        }
+        // z-index: 5;
+        // &:hover {
+        //     background: transparent;
+        //     // display: none;
+        //     opacity: 0;
+        // }
     }
     & .fas {
         opacity: 0;
@@ -62,6 +64,10 @@
         &:hover {
             opacity: 1;
             transition: opacity 500ms;
+            // z-index: 5;
+            &--hid {
+                color: transparent;
+            }
         }
     }
 }

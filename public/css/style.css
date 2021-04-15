@@ -198,15 +198,6 @@ footer a .fas {
   margin: 20px 0px 10px 0px;
 }
 
-#location {
-  height: 50px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #eaeaea;
-}
-
 .accueil {
   height: 65px;
 }
@@ -224,12 +215,21 @@ footer a .fas {
 
 .intro {
   background: #f6f6f6;
-  padding-top: 35px;
   padding-bottom: 30px;
+}
+.intro #location {
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 8px 5px -5px #7e7e7e7e;
 }
 .intro__text {
   width: 240px;
   margin: auto;
+  padding-top: 40px;
 }
 .intro p {
   width: 80%;

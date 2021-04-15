@@ -1,10 +1,17 @@
 .intro {
     background: $color-bg;
-    padding-top: 35px;
     padding-bottom: 30px;
+    & #location {
+        height: 50px;
+        margin: auto;
+        @include center-item;
+        background-color: $color-town;
+        box-shadow: inset 0px 8px 5px -5px $color-inactive;
+    }
     &__text{
         width: 240px;
         margin: auto;
+        padding-top: 40px;
     }
     & p {
         width: 80%;

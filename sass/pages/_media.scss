@@ -1,0 +1,46 @@
+@media all and (min-width: 720px) {
+    #restaurants {
+        display: flex;
+        flex-wrap: wrap;
+        & h3 {
+            width: 100%;
+        }
+        & .rest {
+            width: 47%;
+            margin-left: 2%;
+            margin-right: 0%;
+        }
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        & .favorite {
+            width: 100%;
+        }
+        & .choix {
+            width: 47%;
+            margin-left: 2%;
+            margin-right: 0%;
+        }
+        &__command {
+            width: 47%;
+        }
+    }
+}
+@media all and (min-width: 1024px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        & .favorite {
+            width: 100%;
+        }
+        & .choix {
+            width: 31%;
+            margin-left: 2%;
+            margin-right: 0%;
+        }
+        &__command {
+            width: 100%;
+        }
+    }
+}

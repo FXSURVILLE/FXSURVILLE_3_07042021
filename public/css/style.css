@@ -545,4 +545,52 @@ footer .fas {
   transform: rotate(0);
 }
 
+@media all and (min-width: 720px) {
+  #restaurants {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #restaurants h3 {
+    width: 100%;
+  }
+  #restaurants .rest {
+    width: 47%;
+    margin-left: 2%;
+    margin-right: 0%;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu .favorite {
+    width: 100%;
+  }
+  .menu .choix {
+    width: 47%;
+    margin-left: 2%;
+    margin-right: 0%;
+  }
+  .menu__command {
+    width: 47%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu .favorite {
+    width: 100%;
+  }
+  .menu .choix {
+    width: 31%;
+    margin-left: 2%;
+    margin-right: 0%;
+  }
+  .menu__command {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,12 @@
-.fonctionnement ol {
+.fonctionnement {
+    & > h4 {
+        margin-left: 20px;
+    }
+& ol {
     padding: 10px 30px 80px 30px;
     list-style-type: none;
     counter-reset: compteListe;
+}
 }
 
 .li_fonct {

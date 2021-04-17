@@ -134,7 +134,7 @@ footer a .fas {
   color: #ffffff;
 }
 
-.favorite h1 {
+.favorite h2 {
   font-family: "Shrikhand", cursive;
   font-size: 25px;
 }
@@ -402,7 +402,7 @@ footer .fas {
   justify-content: space-between;
   margin: 0px 20px 0px 20px;
 }
-.menu .favorite h1 {
+.menu .favorite h2 {
   height: auto;
   width: auto;
   display: flex;

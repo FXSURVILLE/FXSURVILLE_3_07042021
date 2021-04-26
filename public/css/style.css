@@ -488,6 +488,7 @@ footer .fas {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  -webkit-transition: 1000ms;
   transition: 1000ms;
 }
 .menu .choix__box .description h5 {
@@ -511,7 +512,9 @@ footer .fas {
   display: flex;
   align-items: flex-end;
   background-color: #ffffff;
+  -webkit-transform: translateX(0px);
   transform: translateX(0px);
+  -webkit-transition: transform 1000ms;
   transition: transform 1000ms;
 }
 .menu .choix__box .check {
@@ -524,11 +527,15 @@ footer .fas {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-transform: translateX(0px);
   transform: translateX(0px);
+  -webkit-transition: transform 1000ms;
   transition: transform 1000ms;
 }
 .menu .choix__box .check .fas {
+  -webkit-transform: rotate(-270deg);
   transform: rotate(-270deg);
+  -webkit-transition: transform 700ms 300ms;
   transition: transform 700ms 300ms;
 }
 
@@ -536,9 +543,11 @@ footer .fas {
   margin-right: 60px;
 }
 .choix__box:hover .price {
+  -webkit-transform: translateX(-60px);
   transform: translateX(-60px);
 }
 .choix__box:hover .check {
+  -webkit-transform: translateX(-60px);
   transform: translateX(-60px);
 }
 .choix__box:hover .check .fas {

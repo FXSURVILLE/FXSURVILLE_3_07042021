@@ -60,6 +60,7 @@
                 align-items: center;
                 width: auto;
                 @include wrap-text;
+                -webkit-transition: $anim-dur-check;
                 transition: $anim-dur-check;
                 & h5 {
                     @include wrap-text;
@@ -79,7 +80,9 @@
                 display: flex;
                 align-items: flex-end;
                 background-color: $color-light;
+                -webkit-transform: translateX(0px);
                 transform: translateX(0px);
+                -webkit-transition: transform $anim-dur-check;
                 transition: transform $anim-dur-check;
             }
             .check {
@@ -90,10 +93,14 @@
                 height: $check-height;
                 border-radius: 0px 15px 15px 0px;
                 @include center-item;
+                -webkit-transform: translateX(0px);
                 transform: translateX(0px);
+                -webkit-transition: transform $anim-dur-check;
                 transition: transform $anim-dur-check;
                 .fas {
+                    -webkit-transform: rotate(-270deg);
                     transform: rotate(-270deg);
+                    -webkit-transition: transform $anim-dur-circle $anim-ret-circle;
                     transition: transform $anim-dur-circle $anim-ret-circle;
                 }
             }
@@ -106,9 +113,11 @@
         margin-right: $check-width;
     }
     &:hover .price {
+        -webkit-transform: translateX(-$check-width);
         transform: translateX(-$check-width);
     }
     &:hover .check {
+        -webkit-transform: translateX(-$check-width);
         transform: translateX(-$check-width);
         & .fas {
             transform: rotate(0);

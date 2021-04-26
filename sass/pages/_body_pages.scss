@@ -60,6 +60,7 @@
                 align-items: center;
                 width: auto;
                 @include wrap-text;
+                transition: $anim-dur-check;
                 & h5 {
                     @include wrap-text;
                     margin-top: 0%;
@@ -77,6 +78,7 @@
                 padding-left: 10px;
                 display: flex;
                 align-items: flex-end;
+                background-color: $color-light;
                 transform: translateX(0px);
                 transition: transform $anim-dur-check;
             }
@@ -102,7 +104,6 @@
 .choix__box {
     &:hover .description {
         margin-right: $check-width;
-        transition: $anim-dur-check ease;
     }
     &:hover .price {
         transform: translateX(-$check-width);

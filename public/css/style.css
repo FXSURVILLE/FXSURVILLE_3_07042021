@@ -488,6 +488,7 @@ footer .fas {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  transition: 1000ms;
 }
 .menu .choix__box .description h5 {
   white-space: nowrap;
@@ -509,6 +510,7 @@ footer .fas {
   padding-left: 10px;
   display: flex;
   align-items: flex-end;
+  background-color: #ffffff;
   transform: translateX(0px);
   transition: transform 1000ms;
 }
@@ -532,7 +534,6 @@ footer .fas {
 
 .choix__box:hover .description {
   margin-right: 60px;
-  transition: 1000ms ease;
 }
 .choix__box:hover .price {
   transform: translateX(-60px);

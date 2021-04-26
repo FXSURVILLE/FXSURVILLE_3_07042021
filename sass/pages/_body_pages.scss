@@ -62,9 +62,13 @@
                 @include wrap-text;
                 & h5 {
                     @include wrap-text;
+                    margin-top: 0%;
+                    margin-bottom: 0%;
                 }
                 & p {
                     @include wrap-text;
+                    margin-top: 0%;
+                    margin-bottom: 0%;
                 }
             }
             .price {

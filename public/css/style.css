@@ -500,11 +500,15 @@ footer .fas {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 .menu .choix__box .description p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 .menu .choix__box .price {
   margin-bottom: 10px;

@@ -87,7 +87,7 @@ body {
 }
 
 .fa-heart {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 body {
@@ -153,6 +153,7 @@ footer a .fas {
 
 .fa-check-circle {
   color: #ffffff;
+  font-size: 25px;
 }
 
 .btn {
@@ -160,6 +161,7 @@ footer a .fas {
   box-shadow: 10px 5px 5px #cfcfcf;
   border-radius: 25px;
   padding: 16px;
+  cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(0, #9b63df, #ff83dd);
@@ -328,6 +330,7 @@ footer .fas {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border-radius: 1em 1em 1em 1em;
+  cursor: pointer;
 }
 #restaurants .rest__img {
   border-radius: 1em 1em 0em 0em;
@@ -371,6 +374,7 @@ footer .fas {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #restaurants .rest__heart .far:hover {
   font-weight: bold;
@@ -414,6 +418,7 @@ footer .fas {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .menu .favorite__heart .far:hover {
   font-weight: bold;
@@ -437,6 +442,7 @@ footer .fas {
   margin: 0px 0px 40px 0px;
 }
 .menu .choix__titre {
+  position: relative;
   margin: 0px 20px 0px 20px;
 }
 .menu .choix__titre::after {
@@ -460,6 +466,7 @@ footer .fas {
   position: relative;
   display: flex;
   overflow: hidden;
+  cursor: pointer;
   animation: pop-box 1000ms ease-out backwards;
 }
 .menu .choix__box--1 {
@@ -502,7 +509,6 @@ footer .fas {
   padding-left: 10px;
   display: flex;
   align-items: flex-end;
-  background-color: #ffffff;
   transform: translateX(0px);
   transition: transform 1000ms;
 }

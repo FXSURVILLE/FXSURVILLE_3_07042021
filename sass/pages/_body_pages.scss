@@ -29,7 +29,7 @@
     & .choix {
         margin: 0px 0px 40px 0px;
         &__titre {
-            // position: relative;
+            position: relative;
             margin: 0px 20px 0px 20px;
             &::after {
                 content: "";
@@ -53,6 +53,7 @@
             position: relative;
             display: flex;
             overflow: hidden;
+            cursor: pointer;
             @include anim-box;
             .description {
                 margin: 10px;
@@ -76,7 +77,6 @@
                 padding-left: 10px;
                 display: flex;
                 align-items: flex-end;
-                background-color: $color-light;
                 transform: translateX(0px);
                 transition: transform $anim-dur-check;
             }

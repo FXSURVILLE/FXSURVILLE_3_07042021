@@ -45,6 +45,7 @@
     & .far {
         position: absolute;
         @include center-item;
+        cursor: pointer;
         &:hover{
 
             font-weight:bold;

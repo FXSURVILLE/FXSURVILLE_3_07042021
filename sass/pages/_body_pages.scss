@@ -6,17 +6,16 @@
     margin-top: -50px;
     padding: 25px 0px 80px 0px;
     & .favorite {
-        @include wrap;
+        display: flex;
         justify-content: space-between;
         margin: 0px 20px 0px 20px;
         & h2 {
-            height: auto;
-            width: auto;
+            margin-right: 10px;
             @include center-item;
         }
         &__heart {
             height: 78px;
-            width: 60px;
+            width: 40px;
             @include center-item;
             @include heart;
         }
@@ -30,7 +29,7 @@
     & .choix {
         margin: 0px 0px 40px 0px;
         &__titre {
-            position: relative;
+            // position: relative;
             margin: 0px 20px 0px 20px;
             &::after {
                 content: "";
@@ -79,7 +78,7 @@
                 align-items: flex-end;
                 background-color: $color-light;
                 transform: translateX(0px);
-                transition: transform 1000ms;
+                transition: transform $anim-dur-check;
             }
             .check {
                 background-color: $color-tertiary;
@@ -90,10 +89,10 @@
                 border-radius: 0px 15px 15px 0px;
                 @include center-item;
                 transform: translateX(0px);
-                transition: transform 1000ms;
+                transition: transform $anim-dur-check;
                 .fas {
                     transform: rotate(-270deg);
-                    transition: transform 700ms 300ms;
+                    transition: transform $anim-dur-circle $anim-ret-circle;
                 }
             }
         }
@@ -101,6 +100,10 @@
 }
 
 .choix__box {
+    &:hover .description {
+        margin-right: $check-width;
+        transition: $anim-dur-check ease;
+    }
     &:hover .price {
         transform: translateX(-$check-width);
     }

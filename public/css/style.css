@@ -392,22 +392,19 @@ footer .fas {
   padding: 25px 0px 80px 0px;
 }
 .menu .favorite {
-  position: relative;
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
   margin: 0px 20px 0px 20px;
 }
 .menu .favorite h2 {
-  height: auto;
-  width: auto;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .menu .favorite__heart {
   height: 78px;
-  width: 60px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,7 +437,6 @@ footer .fas {
   margin: 0px 0px 40px 0px;
 }
 .menu .choix__titre {
-  position: relative;
   margin: 0px 20px 0px 20px;
 }
 .menu .choix__titre::after {
@@ -528,6 +524,10 @@ footer .fas {
   transition: transform 700ms 300ms;
 }
 
+.choix__box:hover .description {
+  margin-right: 60px;
+  transition: 1000ms ease;
+}
 .choix__box:hover .price {
   transform: translateX(-60px);
 }

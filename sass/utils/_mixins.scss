@@ -71,7 +71,7 @@
 @mixin wrap {
     position: relative;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
 }
 
 @mixin anim-box {

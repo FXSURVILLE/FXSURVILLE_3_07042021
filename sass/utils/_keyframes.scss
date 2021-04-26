@@ -1,10 +1,11 @@
-
+// spinner
 @-webkit-keyframes loader1 {
   @include loader-shad;
 }
 @keyframes loader1 {
   @include loader-shad;
 }
+
 @-webkit-keyframes round {
   0% {
     -webkit-transform: rotate(0deg);
@@ -25,6 +26,7 @@
     transform: rotate(360deg);
   }
 }
+// spinner background
 @keyframes loading-bg {
   0% {
     background-color: orchid;
@@ -35,11 +37,12 @@
     z-index: 5;
   }
 }
+// pop menu choices
 @keyframes pop-box {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }

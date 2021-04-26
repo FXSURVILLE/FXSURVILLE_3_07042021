@@ -45,21 +45,26 @@
     & .far {
         position: absolute;
         @include center-item;
-    }
-    & .fas {
-        opacity: 0;
-        background: linear-gradient($color-secondary, $color-primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: absolute;
-        @include center-item;
-        &:hover {
-            opacity: 1;
-            transition: opacity 500ms;
-            &--hid {
-                color: transparent;
+        &:hover{
+
+            font-weight:bold;
+            
+            background:linear-gradient(to bottom,#9356DC,#FF79DA);
+            
+            transition: 250ms ease;
+            
+            background-clip: text;
+            
+            -webkit-background-clip: text;
+            
+            -moz-background-clip: text;
+            
+            -webkit-text-fill-color: transparent;
+            
+            -moz-text-fill-color: transparent;
+            
             }
-        }
+        
     }
 }
 

@@ -4,32 +4,8 @@
     color: $color-text;
 }
 
-.intro {
-    &__text {
-        font-family: 'Roboto', sans-serif;
-        font-size: 22px;
-        text-align: center;
-    }
-    & p {
-        font-size: 18px;
-        text-align: center;
-    }
-}
-
-.rest {
-    &__new {
-        background-color: $color-tertiary;
-        color: $color-tertiary-darker;
-    }
-    &__text {
-        & h3 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 22px;
-        }
-        & p {
-            font-size: 18px;
-        }
-    }
+.fa-heart {
+    font-size: 28px;
 }
 
 body {
@@ -58,7 +34,39 @@ footer {
         }
     }
 }
+
+// index
+
+.intro {
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        text-align: center;
+    }
+    & p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.rest {
+    &__new {
+        background-color: $color-tertiary;
+        color: $color-tertiary-darker;
+    }
+    &__text {
+        & h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+        }
+        & p {
+            font-size: 18px;
+        }
+    }
+}
+
 // pages
+
 .favorite h2 {
     font-family: 'Shrikhand', cursive;
     font-size: 25px;

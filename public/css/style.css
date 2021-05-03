@@ -64,7 +64,7 @@
     z-index: 5;
   }
   100% {
-    background-color: orchid, 0;
+    background-color: transparent;
     z-index: 5;
   }
 }
@@ -299,16 +299,17 @@ footer {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-
 footer h1 {
   margin-left: 25px;
 }
-
-footer a {
+footer nav {
+  display: flex;
+  flex-flow: column;
+}
+footer nav a {
   margin-left: 25px;
 }
-
-footer .fas {
+footer nav .fas {
   width: 30px;
 }
 
@@ -380,7 +381,6 @@ footer .fas {
   font-weight: bold;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   transition: 250ms ease;
-  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -424,7 +424,6 @@ footer .fas {
   font-weight: bold;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   transition: 250ms ease;
-  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;

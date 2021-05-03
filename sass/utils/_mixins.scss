@@ -47,23 +47,14 @@
         @include center-item;
         cursor: pointer;
         &:hover{
-
             font-weight:bold;
-            
             background:linear-gradient(to bottom,#9356DC,#FF79DA);
-            
             transition: 250ms ease;
-            
-            background-clip: text;
-            
+            // background-clip: text;
             -webkit-background-clip: text;
-            
             -moz-background-clip: text;
-            
             -webkit-text-fill-color: transparent;
-            
             -moz-text-fill-color: transparent;
-            
             }
         
     }

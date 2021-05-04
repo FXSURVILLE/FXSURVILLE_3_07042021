@@ -80,6 +80,11 @@ body {
   margin: 0px;
 }
 
+figure {
+  margin: 0%;
+  padding: 0%;
+}
+
 * {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -561,7 +566,7 @@ footer nav .fas {
   #restaurants h3 {
     width: 100%;
   }
-  #restaurants .rest {
+  #restaurants > a {
     width: 47%;
     margin-left: 2%;
     margin-right: 0%;

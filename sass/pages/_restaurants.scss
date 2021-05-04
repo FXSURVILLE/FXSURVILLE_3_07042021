@@ -43,12 +43,14 @@
                 height: 22px;
                 margin: 8px 8px 8px 20px;
             }
-        }
-        &__heart {
-            height: 78px;
-            width: 60px;
-            @include center-item;
-            @include heart;
+            &__heart {
+                height: 78px;
+                width: 60px;
+                position: absolute;
+                right: -5px;
+                bottom: -25px;
+                @include heart;
+            }
         }
     }
 }

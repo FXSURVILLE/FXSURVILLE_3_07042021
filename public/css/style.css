@@ -368,21 +368,21 @@ footer nav .fas {
   height: 22px;
   margin: 8px 8px 8px 20px;
 }
-#restaurants .rest__heart {
+#restaurants .rest__text__heart {
   height: 78px;
   width: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  right: -5px;
+  bottom: -25px;
 }
-#restaurants .rest__heart .far {
+#restaurants .rest__text__heart .far {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-#restaurants .rest__heart .far:hover {
+#restaurants .rest__text__heart .far:hover {
   font-weight: bold;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   transition: 250ms ease;
